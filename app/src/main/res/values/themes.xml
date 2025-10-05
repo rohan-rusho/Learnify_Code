@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LearnifyCode" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="android:statusBarColor">@color/colorPrimaryBlueDark</item>
+        <!-- Optional: light status bar icons? -->
+        <!-- <item name="android:windowLightStatusBar">false</item> -->
+    </style>
+
+    <!-- Reusable outlined EditText style -->
+    <style name="Widget.App.EditField">
+        <item name="android:layout_width">match_parent</item>
+
+
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textColorHint">@color/textSecondary</item>
+
+    </style>
+
+    <!-- Choice chip style -->
+    <style name="Widget.App.TimeRangeChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.05</item>
+
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="rippleColor">@color/rippleLight</item>
+    </style>
+
+    <!-- IF YOU NEED A STYLE NAMED "Widget" AND SOMETHING IS REFERENCING IT -->
+    <style name="Widget">
+        <!-- Define attributes for this style here. -->
+        <!-- For example, if it's a base for other things or a generic container style: -->
+        <!-- <item name="android:padding">8dp</item> -->
+        <!-- Add other items as needed -->
+    </style>
+
+    <!-- You might also want to re-add your other Widget.App.* styles if they were removed accidentally
+         and are still used elsewhere in your project -->
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <!-- Your custom button attributes -->
+    </style>
+
+    <style name="Widget.App.TextView" parent="Widget.MaterialComponents.TextView">
+        <!-- Your custom TextView attributes -->
+    </style>
+
+    <style name="Widget.App">
+        <!-- Can be an empty base for namespacing, or contain common attributes -->
+    </style>
+
+
+    <style name="Theme.LearnifyCode" parent="Base.Theme.LearnifyCode" />
+</resources>

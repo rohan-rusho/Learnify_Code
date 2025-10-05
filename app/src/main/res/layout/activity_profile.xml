@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:fillViewport="true">
+
+    <!-- ScrollView must have exactly ONE direct child -->
+    <LinearLayout
+        android:id="@+id/rootContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="24dp"
+            app:cardBackgroundColor="#1565CB"
+            android:layout_marginTop="-16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/appTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile Sector"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:letterSpacing="0.08"
+                android:paddingTop="52dp"
+                android:paddingBottom="20dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="32dp">
+
+            <!-- Profile Avatar -->
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:src="@drawable/ic_avatar_placeholder"
+                android:background="@drawable/circle_white"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:elevation="4dp"
+                android:layout_marginBottom="18dp" />
+
+            <!-- Username -->
+            <EditText
+                android:id="@+id/etProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="14dp"
+                android:hint="Your Name"
+                android:textColor="#222C58"
+                android:textColorHint="#888888"
+                android:background="@drawable/edittext_outline_blue"
+                android:textSize="16sp"
+                android:inputType="textPersonName"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/etProfileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="14dp"
+                android:hint="E-mail"
+                android:textColor="#222C58"
+                android:textColorHint="#888888"
+                android:background="@drawable/edittext_outline_blue"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <!-- Password -->
+            <EditText
+                android:id="@+id/etProfilePassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="22dp"
+                android:hint="Password"
+                android:textColor="#222C58"
+                android:textColorHint="#888888"
+                android:background="@drawable/edittext_outline_blue"
+                android:textSize="16sp"
+                android:inputType="textPassword"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <!-- Save Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSaveProfile"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="SAVE CHANGES"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/btn_gradient_blue"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="18dp" />
+
+            <!-- Logout Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="LOGOUT"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/logout" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

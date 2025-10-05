@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_dashboard"
+            android:title="Dashboard"
+            android:icon="@drawable/ic_home_24"/>
+        <item
+            android:id="@+id/menu_top10"
+            android:title="Top 10"
+            android:icon="@drawable/ic_chart_24"/>
+        <item
+            android:id="@+id/menu_profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_profile_24"/>
+        <item
+            android:id="@+id/menu_history"
+            android:title="History"
+            android:icon="@drawable/ic_history"/>
+    </group>
+    <item
+        android:id="@+id/menu_divider"
+        android:title="---------"
+        android:enabled="false" />
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout_24"/>
+</menu>

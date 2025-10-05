@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="32dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="18dp"
+            cardView:cardCornerRadius="22dp"
+            cardView:cardElevation="10dp"
+            cardView:cardBackgroundColor="#BBBEC8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <ImageView
+                    android:id="@+id/icon_loops"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Loops"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_course" />
+
+                <TextView
+                    android:id="@+id/title_loops"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Mid Level Python - Part 4"
+                    android:textColor="#1565CB"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Section: Loops -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loops in Python"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#1565CB"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loops help you repeat actions. The two main types are for and while loops."
+            android:textSize="15sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For Loop Example:"
+            android:textStyle="bold"
+            android:textColor="#F9A825"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='for i in range(5):\n    print(i)'
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:textColor="#1565CB"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="While Loop Example:"
+            android:textStyle="bold"
+            android:textColor="#F9A825"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='count = 0\nwhile count &lt; 3:\n    print(count)\n    count += 1'
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:textColor="#1565CB"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tips"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#1565CB"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Use for loops for fixed or known ranges.\n• Use while loops when the number of repetitions is unknown."
+            android:textSize="14sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="18dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCheckKnowledge"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="TEST"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_gradient_blue"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</ScrollView>

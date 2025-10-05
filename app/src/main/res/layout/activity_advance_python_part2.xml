@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="32dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="18dp"
+            cardView:cardCornerRadius="22dp"
+            cardView:cardElevation="10dp"
+            cardView:cardBackgroundColor="#BBBEC8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="24dp">
+
+                <ImageView
+                    android:id="@+id/icon_decorator"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/ic_course"
+                    android:contentDescription="Decorators"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/title_decorator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Advance Python - Part 2"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#1565CB"
+                    android:layout_marginTop="14dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- What is a Decorator? -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is a Decorator?"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="#1565CB"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A decorator is a function that takes another function and extends its behavior without modifying it directly. Decorators are used with @ syntax."
+            android:textSize="16sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Section: Simple Decorator Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simple Decorator Example"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#F9A825"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='def my_decorator(func):\n    def wrapper():\n        print("Before function")\n        func()\n        print("After function")\n    return wrapper\n\n@my_decorator\ndef say_hi():\n    print("Hi!")\n\nsay_hi()'
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:textColor="#1565CB"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Section: Decorators with Arguments -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decorators with Arguments"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#F9A825"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='def repeat(n):\n    def decorator(func):\n        def wrapper(*args, **kwargs):\n            for _ in range(n):\n                func(*args, **kwargs)\n        return wrapper\n    return decorator\n\n@repeat(3)\ndef greet():\n    print("Hello!")'
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:textColor="#1565CB"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Tips -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tips"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#1565CB"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Decorators can be stacked for multiple effects.\n• Use functools.wraps to preserve function metadata."
+            android:textSize="14sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Quiz Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCheckKnowledge"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="TEST"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_gradient_blue"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="32dp">
+
+        <!-- Header Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="18dp"
+            cardView:cardCornerRadius="22dp"
+            cardView:cardElevation="10dp"
+            cardView:cardBackgroundColor="#BBBEC8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="24dp">
+
+                <ImageView
+                    android:id="@+id/icon_oop"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/ic_course"
+                    android:contentDescription="OOP"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/title_oop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Advance Python - Part 1"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#1565CB"
+                    android:layout_marginTop="14dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Section: What is OOP? -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is Object-Oriented Programming (OOP)?"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="#1565CB"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OOP is a programming paradigm based on the concept of objects, which have attributes and methods. It helps organize code, reuse logic, and model real-world entities."
+            android:textSize="16sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Section: Classes and Objects -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Classes and Objects"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#F9A825"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A class is a blueprint for creating objects. An object is an instance of a class."
+            android:textSize="15sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="6dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='class Person:\n    def __init__(self, name):\n        self.name = name\n\np = Person("Rohan")\nprint(p.name)'
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:textColor="#1565CB"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Section: Inheritance -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inheritance"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#F9A825"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inheritance lets a class use methods and properties of another class (the parent)."
+            android:textSize="15sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="6dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='class Student(Person):\n    def __init__(self, name, grade):\n        super().__init__(name)\n        self.grade = grade'
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:textColor="#1565CB"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Section: Encapsulation & Polymorphism -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encapsulation &amp; Polymorphism"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#F9A825"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encapsulation hides details inside classes. Polymorphism means different classes can be used interchangeably if they have the same interface."
+            android:textSize="15sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="13dp"/>
+
+        <!-- Tips -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tips"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#1565CB"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Use OOP for complex code organization.\n• Start simple—add more classes as needed.\n• Use inheritance and composition to reuse code."
+            android:textSize="14sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Quiz Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCheckKnowledge"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="TEST"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_gradient_blue"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</ScrollView>

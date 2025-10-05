@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="32dp">
+
+        <!-- Header Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="18dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="8dp"
+            cardView:cardBackgroundColor="#BBBEC8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="22dp">
+
+                <ImageView
+                    android:id="@+id/icon_conditionals"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_course"
+                    android:contentDescription="Conditionals"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/title_conditionals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Python - Part 5"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#1565CB"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Conditional Statements -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conditional Statements"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#1565CB"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conditional statements let you execute different code based on conditions, using if, elif, and else."
+            android:textSize="15sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Example"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#F9A825"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='age = 18\nif age >= 18:\n    print("Adult")\nelif age >= 13:\n    print("Teen")\nelse:\n    print("Child")'
+            android:textSize="13sp"
+            android:fontFamily="monospace"
+            android:textColor="#1565CB"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Tips -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tips"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#1565CB"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Use indentation for code blocks after if, elif, and else.\n• You can have multiple elif blocks but only one if and one else."
+            android:textSize="14sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Quiz Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCheckKnowledge"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="TEST"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_gradient_blue"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</ScrollView>

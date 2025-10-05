@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="32dp">
+
+        <!-- Header Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="18dp"
+            cardView:cardCornerRadius="20dp"
+            cardView:cardElevation="8dp"
+            cardView:cardBackgroundColor="#BBBEC8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="22dp">
+
+                <ImageView
+                    android:id="@+id/icon_operators"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_course"
+                    android:contentDescription="Operators"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/title_operators"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Python - Part 4"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#1565CB"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Operators in Python -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operators in Python"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#1565CB"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operators are used to perform operations on variables and values."
+            android:textSize="15sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Common Operators -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Common Operators"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#F9A825"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• + (Addition)\n• - (Subtraction)\n• * (Multiplication)\n• / (Division)\n• % (Modulus)\n• == (Equal to)\n• != (Not equal to)\n• &lt;, &gt;, &lt;=, &gt;= (Comparison)\n• and, or, not (Logical)"
+            android:textSize="14sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Examples -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Examples"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#F9A825"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='a = 5\nb = 2\nsum = a + b   # 7\nis_equal = (a == b)  # False'
+            android:textSize="13sp"
+            android:fontFamily="monospace"
+            android:textColor="#1565CB"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Tips -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tips"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#1565CB"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Use parentheses to control operator precedence.\n• Logical operators return True or False."
+            android:textSize="14sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Quiz Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCheckKnowledge"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="TEST"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_gradient_blue"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</ScrollView>

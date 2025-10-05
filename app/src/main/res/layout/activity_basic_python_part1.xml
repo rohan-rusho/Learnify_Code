@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="32dp">
+
+        <!-- Header Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="18dp"
+            cardView:cardCornerRadius="22dp"
+            cardView:cardElevation="10dp"
+            cardView:cardBackgroundColor="#BBBEC8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="24dp">
+
+                <ImageView
+                    android:id="@+id/icon_variables"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/ic_course"
+                    android:contentDescription="Variables"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/title_variables"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Python - Part 1"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#1565CB"
+                    android:layout_marginTop="14dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- What is a Variable? -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is a Variable?"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="#1565CB"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A variable in Python is a container for storing data values. Variables have names and can hold numbers, text, lists, and more."
+            android:textSize="16sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- How to Create a Variable -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How to Create a Variable"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#F9A825"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You can create a variable by assigning a value to a name using the = sign."
+            android:textSize="15sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="6dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='x = 5\ny = "Hello"\nname = "Alice"\npi = 3.14'
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:textColor="#1565CB"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Rules for Variable Names -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rules for Variable Names"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#F9A825"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Must start with a letter or underscore (_)\n• Cannot start with a number\n• Can only contain letters, numbers, and underscores\n• Are case-sensitive (myVar and myvar are different)"
+            android:textSize="15sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Example Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Example"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#F9A825"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='age = 21\nname = "Rohan"\nscore = 98.5'
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:textColor="#1565CB"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Tips -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tips"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#1565CB"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Use meaningful variable names (e.g. score, age, user_name)\n• Avoid reserved keywords (e.g. if, for, class)\n• Use snake_case for best practice: my_variable"
+            android:textSize="15sp"
+            android:textColor="#222C58"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Quiz Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCheckKnowledge"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="TEST"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_gradient_blue"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</ScrollView>

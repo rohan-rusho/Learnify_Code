@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Track (always visible grey background) -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="6dp"/>
+            <solid android:color="#E0E0E0"/> <!-- light grey -->
+        </shape>
+    </item>
+
+    <!-- Progress (red bar scaled by level) -->
+    <item android:id="@android:id/progress">
+        <scale
+            android:useLevel="true"
+            android:scaleWidth="100%">
+            <shape android:shape="rectangle">
+                <corners android:radius="6dp"/>
+                <solid android:color="#F44336"/> <!-- red -->
+            </shape>
+        </scale>
+    </item>
+
+</layer-list>

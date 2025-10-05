@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learnify Code"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#FFA000"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free app for learning codes"
+                android:textColor="#004CFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="36dp"
+                android:fontFamily="sans-serif" />
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginBottom="16dp"
+                android:hint="Enter your name or e-mail"
+                android:paddingHorizontal="16dp"
+                android:background="@drawable/edittext_outline_blue"
+                android:textColor="#222222"
+                android:textColorHint="#888888"
+                android:fontFamily="sans-serif" />
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginBottom="12dp"
+                android:hint="Password"
+                android:paddingHorizontal="16dp"
+                android:background="@drawable/edittext_outline_blue"
+                android:inputType="textPassword"
+                android:textColor="#222222"
+                android:textColorHint="#888888"
+                android:fontFamily="sans-serif" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:text="Login"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/btn_gradient_blue"
+                android:elevation="8dp"
+                android:stateListAnimator="@null"/>
+
+            <!-- Small spinner for "LOGGING IN..." state -->
+            <ProgressBar
+                android:id="@+id/progressLogin"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:text="Try Sign Up"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/btn_gradient_orange"
+                android:elevation="8dp"
+                android:stateListAnimator="@null"/>
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="40dp"
+                android:background="#F5F5F5"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Learnify Code</string>
+    <!-- Used in DashboardActivity: getString(R.string.welcome_back, username) -->
+    <string name="welcome_back">Welcome back,</string>
+</resources>

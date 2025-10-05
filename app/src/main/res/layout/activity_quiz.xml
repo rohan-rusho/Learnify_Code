@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="32dp">
+
+        <!-- Header Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="18dp"
+            cardView:cardCornerRadius="22dp"
+            cardView:cardElevation="7dp"
+            cardView:cardBackgroundColor="#AAAFE0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="24dp">
+
+                <ImageView
+                    android:id="@+id/iconQuiz"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_quiz"
+                    android:padding="8dp"
+                    android:contentDescription="Quiz"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/titleQuiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check Your Knowledge"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#1565CB"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvQuizProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 1 of 4"
+            android:textSize="15sp"
+            android:textColor="#F9A825"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tvQuizQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample question?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222C58"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Options -->
+        <LinearLayout
+            android:id="@+id/layoutQuizOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardQOption1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                cardView:cardCornerRadius="16dp"
+                cardView:cardElevation="5dp"
+                cardView:cardBackgroundColor="#AAAFE0"
+                android:layout_marginBottom="10dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/tvQOption1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option 1"
+                    android:textSize="16sp"
+                    android:textColor="#222C58"
+                    android:padding="16dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardQOption2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                cardView:cardCornerRadius="16dp"
+                cardView:cardElevation="5dp"
+                cardView:cardBackgroundColor="#AAAFE0"
+                android:layout_marginBottom="10dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/tvQOption2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option 2"
+                    android:textSize="16sp"
+                    android:textColor="#222C58"
+                    android:padding="16dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardQOption3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                cardView:cardCornerRadius="16dp"
+                cardView:cardElevation="5dp"
+                cardView:cardBackgroundColor="#AAAFE0"
+                android:layout_marginBottom="10dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/tvQOption3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option 3"
+                    android:textSize="16sp"
+                    android:textColor="#222C58"
+                    android:padding="16dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardQOption4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                cardView:cardCornerRadius="16dp"
+                cardView:cardElevation="5dp"
+                cardView:cardBackgroundColor="#AAAFE0"
+                android:layout_marginBottom="10dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/tvQOption4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option 4"
+                    android:textSize="16sp"
+                    android:textColor="#222C58"
+                    android:padding="16dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNextQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Next"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_gradient_blue"
+            android:layout_marginTop="18dp"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</ScrollView>
