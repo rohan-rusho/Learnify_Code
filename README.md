@@ -1,4 +1,4 @@
-# Your App Name
+# Learnify Code
 
 A concise, compelling one-liner that explains what your app does and who it’s for. For example: “A lightweight task manager to help teams plan, track, and deliver projects faster.”
 
