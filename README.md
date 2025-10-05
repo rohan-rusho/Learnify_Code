@@ -97,19 +97,19 @@ Screenshots are organized in a 4-column grid. Place your PNG images in the SS fo
 
 <table>
   <tr>
-    <td align="center"><img src="SS/01.png" alt="App Screenshot 1" width="240"><br><sub>Screenshot 1</sub></td>
-    <td align="center"><img src="SS/02.png" alt="App Screenshot 2" width="240"><br><sub>Screenshot 2</sub></td>
-    <td align="center"><img src="SS/03.png" alt="App Screenshot 3" width="240"><br><sub>Screenshot 3</sub></td>
-    <td align="center"><img src="SS/04.png" alt="App Screenshot 4" width="240"><br><sub>Screenshot 4</sub></td>
+    <td align="center"><img src="SS/1.png" alt="App Screenshot 1" width="240"><br><sub>Screenshot 1</sub></td>
+    <td align="center"><img src="SS/2.png" alt="App Screenshot 2" width="240"><br><sub>Screenshot 2</sub></td>
+    <td align="center"><img src="SS/3.png" alt="App Screenshot 3" width="240"><br><sub>Screenshot 3</sub></td>
+    <td align="center"><img src="SS/4.png" alt="App Screenshot 4" width="240"><br><sub>Screenshot 4</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="SS/05.png" alt="App Screenshot 5" width="240"><br><sub>Screenshot 5</sub></td>
-    <td align="center"><img src="SS/06.png" alt="App Screenshot 6" width="240"><br><sub>Screenshot 6</sub></td>
-    <td align="center"><img src="SS/07.png" alt="App Screenshot 7" width="240"><br><sub>Screenshot 7</sub></td>
-    <td align="center"><img src="SS/08.png" alt="App Screenshot 8" width="240"><br><sub>Screenshot 8</sub></td>
+    <td align="center"><img src="SS/5.png" alt="App Screenshot 5" width="240"><br><sub>Screenshot 5</sub></td>
+    <td align="center"><img src="SS/6.png" alt="App Screenshot 6" width="240"><br><sub>Screenshot 6</sub></td>
+    <td align="center"><img src="SS/7.png" alt="App Screenshot 7" width="240"><br><sub>Screenshot 7</sub></td>
+    <td align="center"><img src="SS/8.png" alt="App Screenshot 8" width="240"><br><sub>Screenshot 8</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="SS/09.png" alt="App Screenshot 9" width="240"><br><sub>Screenshot 9</sub></td>
+    <td align="center"><img src="SS/9.png" alt="App Screenshot 9" width="240"><br><sub>Screenshot 9</sub></td>
     <td align="center"><img src="SS/10.png" alt="App Screenshot 10" width="240"><br><sub>Screenshot 10</sub></td>
     <td align="center"><img src="SS/11.png" alt="App Screenshot 11" width="240"><br><sub>Screenshot 11</sub></td>
     <td align="center"><img src="SS/12.png" alt="App Screenshot 12" width="240"><br><sub>Screenshot 12</sub></td>
